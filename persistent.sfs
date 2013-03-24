@@ -58,8 +58,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.19.1
-		UT = 759635.889799933
-		activeVessel = 7
+		UT = 760067.882472314
+		activeVessel = 0
 		CREW
 		{
 			name = Jebediah Kerman
@@ -97,6 +97,46 @@ GAME
 			dumb = 0.5800282
 			badS = False
 			state = 1
+			ToD = 0
+			idx = 1
+		}
+		CREW
+		{
+			name = Dilald Kerman
+			brave = 0.2563266
+			dumb = 0.9021211
+			badS = False
+			state = 3
+			ToD = 766842.92979994
+			idx = 0
+		}
+		CREW
+		{
+			name = Enlin Kerman
+			brave = 0.9311872
+			dumb = 0.4380485
+			badS = True
+			state = 3
+			ToD = 766842.92979994
+			idx = 1
+		}
+		CREW
+		{
+			name = Jormund Kerman
+			brave = 0.1112378
+			dumb = 0.9266975
+			badS = False
+			state = 0
+			ToD = 0
+			idx = 0
+		}
+		CREW
+		{
+			name = Thomdin Kerman
+			brave = 0.9834216
+			dumb = 0.5573918
+			badS = False
+			state = 0
 			ToD = 0
 			idx = 1
 		}
@@ -2454,8 +2494,8 @@ GAME
 			prst = False
 			eva = False
 			ref = 0
-			cPch = 0.616
-			cHdg = 1.484
+			cPch = 
+			cHdg = 
 			cMod = 0
 			ORBIT
 			{
@@ -14558,6 +14598,591 @@ GAME
 				Light = False, 0
 				RCS = False, 0
 				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+		}
+		VESSEL
+		{
+			pid = bb7ca6cd1afa48909921c524a18668ff
+			name = Derp Orbiter
+			type = Lander
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 411.232672361424
+			lct = 759654.769799951
+			root = 0
+			lat = -1.53104519432227
+			lon = -47.7423097926451
+			alt = 163645.583390761
+			hgt = -1
+			nrm = -0.9967298,0.02803743,0.07578862
+			rot = 0.5729442,-0.3688593,-0.4576552,-0.5711652
+			CoM = -0.00174427,-9.303962,-7.160008E-05
+			stg = 0
+			prst = False
+			eva = False
+			ref = 587682522
+			cPch = 
+			cHdg = 
+			cMod = 1
+			ORBIT
+			{
+				SMA = 810962.730548043
+				ECC = 0.0801355605696918
+				INC = 3.55742689538389
+				LPE = 158.986572916779
+				LAN = 264.561571674672
+				MNA = 0.700311115540959
+				EPH = 760066.002472312
+				REF = 1
+				OBJ = 0
+			}
+			PART
+			{
+				name = mk2LanderCabin
+				uid = 587682522
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 1
+				attN = top, 9
+				mass = 2.5
+				temp = -200.6986
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				crew = 6
+				crew = 7
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 100
+					maxAmount = 100
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelTank3-2
+				uid = 1243478693
+				parent = 0
+				position = 0,-4.1535701751709,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 4
+				temp = -200.1259
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 2880
+					flowState = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 3520
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelTank3-2
+				uid = 1252015380
+				parent = 1
+				position = 0,-11.6535720825195,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 4
+				temp = -201.031
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 2880
+					flowState = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 3520
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine1-2
+				uid = 1371618793
+				parent = 2
+				position = 0,-16.468879699707,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 2
+				attN = None, -1
+				mass = 6
+				temp = -198.9826
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					flameout = True
+					staged = True
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 0.0399999991059303
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = CanardController
+				uid = 843825151
+				parent = 2
+				position = -1.21154570579529,-14.5124492645264,1.19209289550781E-07
+				rotation = 0,-8.42937E-08,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 2
+				mass = 0.04
+				temp = -200.189
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = CanardController
+				uid = 929282722
+				parent = 2
+				position = 2.08616256713867E-07,-14.5124492645264,1.21154570579529
+				rotation = 0,-0.7071069,0,-0.7071067
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 2
+				mass = 0.04
+				temp = -200.0767
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = CanardController
+				uid = 3507391920
+				parent = 2
+				position = 1.21154534816742,-14.5124492645264,-1.78813934326172E-07
+				rotation = 0,-1,0,8.42937E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				sym = 7
+				srfN = srfAttach, 2
+				mass = 0.04
+				temp = -199.9646
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = CanardController
+				uid = 3469595065
+				parent = 2
+				position = -1.04308128356934E-07,-14.5124492645264,-1.211545586586
+				rotation = 0,0.7071068,0,-0.7071068
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				sym = 6
+				srfN = srfAttach, 2
+				mass = 0.04
+				temp = -199.8525
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = batteryPack
+				uid = 2867147360
+				parent = 2
+				position = -1.04308128356934E-07,-12.3125095367432,-1.20779120922089
+				rotation = 0,-4.371139E-08,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 2
+				mass = 0.005
+				temp = -199.6297
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 100
+					maxAmount = 100
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = asasmodule1-2
+				uid = 3080888544
+				parent = 0
+				position = 0,1.00193023681641,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 10
+				attN = bottom, 0
+				mass = 0.5
+				temp = -200.3237
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = rocketNoseCone
+				uid = 4201267147
+				parent = 9
+				position = 0,1.25193023681641,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 9
+				mass = 0.4
+				temp = -199.9182
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 759654.629799951
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 759991.782472243
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
